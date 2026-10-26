@@ -12,6 +12,7 @@
  */
 public class Main {
 
+    //Creating 4 different motorcycles to test it against the backend
     public static void main(String[] args) {
         Motorcycle bike1 = new Motorcycle(
                 "Yamaha", "MT-09", 2024, "Icon Green",
@@ -49,12 +50,13 @@ public class Main {
                 new Brakes("Dual Disc", "Single disc", true),
                 5, 11);
 
+        //makes sure it prints out the different bikes
         printMotorcycle(1, bike1);
         printMotorcycle(2, bike2);
         printMotorcycle(3, bike3);
         printMotorcycle(4, bike4);
     }
-
+     //How the output will look. It contains the output of the code and what it is assigned to
     private static void printMotorcycle(int number, Motorcycle m) {
         System.out.println("========== Motorcycle " + number + " ==========");
         System.out.println("Make:            " + m.getMake());
