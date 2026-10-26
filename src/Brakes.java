@@ -17,13 +17,14 @@ public class Brakes {
     private boolean antiLockBrakes; //checks weather or not there is antilockbrakes
 
 
-
+   //Fill constructor with fields of the brakes
     public Brakes(String frontType, String backType, boolean antiLockBrakes) {
         this.frontType = frontType;
         this.backType = backType;
         this.antiLockBrakes = antiLockBrakes;
     }
 
+    //getters and setters of the fields of the brakes
     public String getFrontType() {
         return frontType;
     }
